@@ -147,31 +147,8 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 LOGIN_REDIRECT_URL = "home"
 LOGOUT_REDIRECT_URL = "home"
 
-# آدرس ایمیلی است که از آن ایمیل‌های مربوط به ریست کردن پسورد ارسال می‌شود. شما باید این آدرس را به یک آدرس واقعی که در دسترس است تغییر دهید. مثلاً:
-# DEFAULT_FROM_EMAIL = "webmaster@example.com"
-
 #سرور جنگو برای ریست بسورد
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-
-#برای محیط تولید:
-# اگر می‌خواهید ایمیل‌ها به‌طور واقعی ارسال شوند، باید از یک سرویس SMTP استفاده کنید. به‌عنوان مثال، اگر از Gmail استفاده می‌کنید، می‌توانید به این شکل تنظیم کنید:
-# EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
-# EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = 'your-email@gmail.com'
-# EMAIL_HOST_PASSWORD = 'your-email-password'
-
-# SendGrid Email API
-# EMAIL_BACKEND = 'sendgrid_backend.SendgridBackend'
-# SENDGRID_API_KEY = 'your_sendgrid_api_key'
-# EMAIL_HOST = 'smtp.sendgrid.net'
-# EMAIL_PORT = 587
-# EMAIL_USE_TLS = True
-# EMAIL_HOST_USER = 'apikey'  # برای استفاده از API Key
-# EMAIL_HOST_PASSWORD = 'your_sendgrid_api_key'
-
-
 
 #مسیر فولدر مدیا
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
